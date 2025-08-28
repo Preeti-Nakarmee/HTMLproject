@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event form</title>
+</head>
+<body>
+    <h2>Event Booking</h2>
+    <form action="/server">
+        <label for="eventname">Event Name:</label><br>
+        <div>
+            <input type="text" id="eventname" name="eventname" placeholder="Event Name" required><br><br>
+        
+            <label for="eventname">Types of Event</label><br>
+        
+            <input type="radio" id="social" name="event" value="Social">
+            <label for="social">Social event</label><br>
+        
+            <input type="radio" id="cultural" name="event" value="Cultural">
+            <label for="cultural">Cultural event</label><br>
+        
+            <input type="radio" id="business" name="event" value="Business">
+            <label for="business">Business event</label><br>
+        
+            <input type="radio" id="entertainment" name="event" value="Entertainment">
+            <label for="entertainment">Entertainment event</label><br>
+        </div>
+
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" placeholder="Location">
+        <br><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+        <label for="time">Time:</label><br>     
+   <select>
+    <option>10:00 to 1:00</option>
+    <option>1:10 to 3:00</option>
+    <option>3:10 to 6:00</option>
+   </select>
+        <br><br>
+        <div>
+            <label for="list">List:</label> <br>
+            <input type="checkbox" id="food" name="items">
+            <label for="food"> Food</label><br>
+
+            <input type="checkbox" id="ticket" name="items">
+            <label for="ticket"> Ticket</label><br>
+
+            <input type="checkbox" id="audience" name="items">
+            <label for="audience"> Audience</label><br>
+
+        </div>
+        <br>
+        <label for="description">Message:</label><br>
+
+        <textarea id="description" name="description" rows="5" cols="30"></textarea>
+        <br>
+        <button>Send me</button>
+
+
+
+    </form>
+
+    
+</body>
+</html>
